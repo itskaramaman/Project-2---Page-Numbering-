@@ -9,7 +9,7 @@ const numberOfPage = Math.ceil(contactItems.length / usersPerPage);
 // create html for pagination
 let paginationHTML = "";
 for(let i=1; i<=numberOfPage; i++) {
-    paginationHTML+=`<li><a href="javascript:void(0)" id="${i}" onclick="updatePage(${i})">${i}</a></li>`;
+    paginationHTML+=`<li><a href="#" id="${i}" onclick="updatePage(${i})">${i}</a></li>`;
 }
 // set the inner html of pagination
 document.getElementById('pagination-list').innerHTML = paginationHTML;
